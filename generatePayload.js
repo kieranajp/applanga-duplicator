@@ -1,11 +1,11 @@
 const STATUS_APPROVED = 1;
 const STATUS_NEEDS_REVIEW = 2;
 
-const generatePayload = (lang, group, translations, onlyAsDraft = true) => {
+const generatePayload = (lang, group, translations, approve = false) => {
     const payload = {
         options: {
-            onlyAsDraft,
-            setStatus: onlyAsDraft ? STATUS_NEEDS_REVIEW : STATUS_APPROVED,
+            onlyAsDraft: !approve,
+            setStatus: approve ? STATUS_APPROVED : STATUS_NEEDS_REVIEW,
         },
         data: {
             [lang]: {
