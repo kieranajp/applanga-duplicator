@@ -1,0 +1,13 @@
+{
+  "name": "applanga-duplicator",
+  "version": "0.0.1",
+  "description": "Duplicates groups in applanga from one language to another",
+  "main": "index.js",
+  "author": "Kieran Patel <me@kieranajp.co.uk> (https://www.kieranajp.uk)",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "dotenv": "^5.0.1",
+    "minimist": "^1.2.0"
+  }
+}
