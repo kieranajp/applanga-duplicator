@@ -11,7 +11,7 @@ Node 8 is required. Clone this repo and run `npm install`. Copy `.env.example` t
 ### Example
 
 ```sh
-node index.js --group base --from fr-BE --to en-IE [--approve]
+node index.js --group base --from fr-BE --to en-IE [--approve] [--dry-run]
 ```
 
 ### Flags
@@ -20,3 +20,4 @@ node index.js --group base --from fr-BE --to en-IE [--approve]
 - `from`: Language to copy from
 - `to`: Language to copy to
 - `approve`: Whether to automatically approve the translations. Defaults to false.
+- `dry-run`: Don't actually save anything to applanga. Defaults to false.
