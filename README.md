@@ -11,12 +11,12 @@ Node 8 is required. Clone this repo and run `npm install`. Copy `.env.example` t
 ### Example
 
 ```sh
-node index.js --group base --from fr-BE --to en-IE [--approve] [--dry-run]
+node index.js --groups base,other --from fr-BE --to en-IE [--approve] [--dry-run]
 ```
 
 ### Flags
 
-- `group`: Which group to clone
+- `groups`: Which groups to clone (comma-separated)
 - `from`: Language to copy from
 - `to`: Language to copy to
 - `approve`: Whether to automatically approve the translations. Defaults to false.
